@@ -9,4 +9,4 @@
   - [Atom Struct](./api_reference/atom.md)
   - [Generate Function](./api_reference/generate.md)
   - [To PDB Function](./api_reference/to_pdb.md)
-  - [Sobol Sequence](./api_reference/sobol.mds)
+  - [Sobol Sequence](./api_reference/sobol.md)
