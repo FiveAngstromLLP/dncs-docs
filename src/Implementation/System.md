@@ -48,20 +48,11 @@ The `System` struct represents a molecular system composed of particles (atoms) 
 - **`get_dihedral(&mut self)`**:
   Calculates the dihedral angles in the system, including both backbone and side-chain dihedrals, and populates the `dihedral` and `dihedral_angle` lists.
 
-- **`get_dihedralatoms(&mut self, sidechain: bool)`**:
-  Identifies atoms involved in dihedral angles, optionally including side-chain atoms based on the `sidechain` parameter.
-
-- **`get_dihedral_for_angle(&mut self, sidechain: bool)`**:
-  Determines the dihedral angles specifically used for angle calculations, including handling of sequence termini.
-
 - **`get_hydrogen_bonded(&mut self)`**:
   Identifies pairs of atoms that can form hydrogen bonds and populates the `hydrogen` list. Searches for hydrogen donors and acceptors within the system.
 
 - **`get_neighbours(&mut self)`**:
-  Determines the bonded and non-bonded neighbors for each atom by creating `Neighbor` instances and updating the neighbor lists.
-
-- **`dihedral_log(&self, foldername: &str)`**:
-  Writes the list of dihedral angles to a log file within the specified folder, providing a record of the dihedral configurations.
+  Determines the bonded and non-bonded neighbors for each atom by creating `Neighbour` instances and updating the neighbor lists.
 
 - **`to_pdb(&self, filename: &str)`**:
   Exports the system's atom information to a PDB file, allowing visualization or further analysis using standard molecular modeling tools.
@@ -70,7 +61,7 @@ The `System` struct represents a molecular system composed of particles (atoms) 
 
 ## Neighbor
 
-The `Neighbor` struct is responsible for calculating and storing neighbor atoms for a specific atom within a molecular system. It categorizes neighbors into different levels based on bonding and spatial relationships.
+The `Neighbour` struct is responsible for calculating and storing neighbor atoms for a specific atom within a molecular system. It categorizes neighbors into different levels based on bonding and spatial relationships.
 
 ### Fields
 
