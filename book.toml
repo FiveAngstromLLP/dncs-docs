@@ -7,3 +7,8 @@ title = "dncs"
 
 [output.html]
 mathjax-support = true
+
+[output.html.playground]
+editable = false
+line-numbers = false
+runnable = false
