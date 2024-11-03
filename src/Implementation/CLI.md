@@ -46,7 +46,7 @@ dncs -N test -s YGGFM -n 10 -f amber03.xml -m -g 4
 Or use a configuration file:
 
 ```bash
-# Generate default config
+# Generate sample config
 dncs -c
 
 # Edit dncs.json as needed
