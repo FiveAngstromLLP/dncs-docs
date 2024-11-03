@@ -1,6 +1,5 @@
 ## System
 
-
 The `System` struct represents a molecular system composed of particles (atoms) and encapsulates information about the system's topology, force field parameters, and interactions. It is designed to handle the initialization and management of molecular systems for simulations or analyses.
 
 ### Fields
@@ -56,8 +55,6 @@ The `System` struct represents a molecular system composed of particles (atoms) 
 
 - **`to_pdb(&self, filename: &str)`**:
   Exports the system's atom information to a PDB file, allowing visualization or further analysis using standard molecular modeling tools.
-
-
 
 ## Neighbor
 
